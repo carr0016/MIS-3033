@@ -24,5 +24,10 @@ namespace WPFParticipation1
         {
             InitializeComponent();
         }
+
+        private void btn_calculate_Click(object sender, RoutedEventArgs e)
+        {
+          
+        }
     }
 }
