@@ -27,7 +27,14 @@ namespace WPFParticipation1
 
         private void btn_calculate_Click(object sender, RoutedEventArgs e)
         {
-          
+            DateTime dateOfBirth;
+            DateTime.TryParse(txtDOB.Text, out dateOfBirth);
+            DateTime currentDate = DateTime.Now;
+            TimeSpan difference = currentDate.Subtract(dateOfBirth);
+            DateTime age = DateTime.MinValue + difference;
+            int ageInYears = age.Year - 1;
+            txtage.Text = (ageInYears).ToString();
         }
+       
     }
 }
