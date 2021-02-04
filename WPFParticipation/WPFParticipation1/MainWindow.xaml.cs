@@ -34,7 +34,14 @@ namespace WPFParticipation1
             DateTime age = DateTime.MinValue + difference;
             int ageInYears = age.Year - 1;
             txtage.Text = (ageInYears).ToString();
+          
+
         }
-       
+        
+
+
+
+        }
+
     }
-}
+
