@@ -6,13 +6,10 @@
         xmlns:local="clr-namespace:WPFParticipation1"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        <Grid.Background>
-            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                <GradientStop Color="Black"/>
-                <GradientStop Color="#FFFF03FF" Offset="0.275"/>
-            </LinearGradientBrush>
-        </Grid.Background>
-
+    <Grid Background="#FFD0FFFF">
+        <Label x:Name="lblname" Content="Enter your name:" HorizontalAlignment="Left" Height="76" Margin="24,33,0,0" VerticalAlignment="Top" Width="228" FontSize="24"/>
+        <Label x:Name="lblbday" Content="Enter your birthday:" HorizontalAlignment="Left" Height="80" Margin="24,114,0,0" VerticalAlignment="Top" Width="228" FontSize="22"/>
+        <TextBox x:Name="txtboxname" HorizontalAlignment="Left" Height="38" Margin="237,33,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="148"/>
+        <DatePicker x:Name="datepicker" Margin="257,97,371,240"/>
     </Grid>
 </Window>
