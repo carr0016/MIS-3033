@@ -34,13 +34,13 @@ namespace WPFParticipation1
             DateTime age = DateTime.MinValue + difference;
             int ageInYears = age.Year - 1;
             txtage.Text = (ageInYears).ToString();
-
+            
             
         }
 
         private void calculatebutton_MouseEnter(object sender, MouseEventArgs e)
         {
-            calculatebutton.Background = Color.Blue;
+            calculatebutton.Background = Color.Red;
         }
     }
 
