@@ -53,11 +53,12 @@ namespace WPFClassesExample
 
         private void ListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            if (1stPets.SelectedItem is null)
-            {
-                Pet selectedPet = (Pet)1stPets.SelectedIteml
-                    picPet.Source = new BitmapImage(new Uri(selectedPet.PicURL));
-            }
+            Pet selectedPet = (Pet)1stPets.SelectedItem;
+
+            Uri locationOfImage = new Uri(selectedPet.PicURL);
+            BitmapImage picFromInternet = new BitmapImage(locationOfImage);
+
+            picPet.Source = picFromInternet;
         }
     }
 }
