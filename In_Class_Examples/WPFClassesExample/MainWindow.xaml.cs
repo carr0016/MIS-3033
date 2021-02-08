@@ -50,5 +50,14 @@ namespace WPFClassesExample
 
 
         }
+
+        private void ListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if (1stPets.SelectedItem is null)
+            {
+                Pet selectedPet = (Pet)1stPets.SelectedIteml
+                    picPet.Source = new BitmapImage(new Uri(selectedPet.PicURL));
+            }
+        }
     }
 }

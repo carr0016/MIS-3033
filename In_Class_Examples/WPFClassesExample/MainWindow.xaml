@@ -10,7 +10,7 @@
         <Label Content="Pet name:" HorizontalAlignment="Left" Height="56" Margin="37,41,0,0" VerticalAlignment="Top" Width="155"/>
         <Label Content="Pet Breed:" HorizontalAlignment="Left" Height="56" Margin="37,132,0,0" VerticalAlignment="Top" Width="155"/>
         <Label Content="URL to Pic:" HorizontalAlignment="Left" Height="56" Margin="37,199,0,0" VerticalAlignment="Top" Width="155"/>
-        <ListBox HorizontalAlignment="Left" Height="107" Margin="479,270,0,0" VerticalAlignment="Top" Width="263"/>
+        <ListBox x:Name="_1stPets" HorizontalAlignment="Left" Height="107" Margin="479,270,0,0" VerticalAlignment="Top" Width="263" SelectionChanged="ListBox_SelectionChanged"/>
         <TextBox x:Name="txtName" HorizontalAlignment="Left" Height="33" Margin="167,36,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="158"/>
         <TextBox x:Name="txtBreed" HorizontalAlignment="Left" Height="32" Margin="167,144,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="158"/>
         <TextBox x:Name="txtURL" HorizontalAlignment="Left" Height="34" Margin="167,210,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="158"/>
