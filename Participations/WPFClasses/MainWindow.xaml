@@ -6,7 +6,13 @@
         xmlns:local="clr-namespace:WPFClasses"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
-
+    <Grid Background="#FFCAF1EA">
+        <Image HorizontalAlignment="Left" Height="150" Margin="265,24,0,0" VerticalAlignment="Top" Width="283" Source="/Image1.png"/>
+        <Label Content="Manufacturer:" HorizontalAlignment="Left" Height="46" Margin="28,185,0,0" VerticalAlignment="Top" Width="137"/>
+        <Label Content="Name:" HorizontalAlignment="Left" Height="46" Margin="33,231,0,0" VerticalAlignment="Top" Width="137"/>
+        <Label Content="Price:" HorizontalAlignment="Left" Height="46" Margin="33,282,0,0" VerticalAlignment="Top" Width="137"/>
+        <TextBox x:Name="txtMan" HorizontalAlignment="Left" Height="28" Margin="170,189,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="59"/>
+        <TextBox x:Name="txtName" HorizontalAlignment="Left" Height="28" Margin="170,240,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="59"/>
+        <TextBox x:Name="txtPrice" HorizontalAlignment="Left" Height="28" Margin="170,305,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="59"/>
     </Grid>
 </Window>
