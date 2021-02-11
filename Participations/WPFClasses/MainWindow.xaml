@@ -14,5 +14,7 @@
         <TextBox x:Name="txtMan" HorizontalAlignment="Left" Height="28" Margin="170,189,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="59"/>
         <TextBox x:Name="txtName" HorizontalAlignment="Left" Height="28" Margin="170,240,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="59"/>
         <TextBox x:Name="txtPrice" HorizontalAlignment="Left" Height="28" Margin="170,305,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="59"/>
+        <ListBox x:Name="lstToys" HorizontalAlignment="Left" Height="144" Margin="503,231,0,0" VerticalAlignment="Top" Width="211"/>
+        <Button x:Name="btnToy" Content="Add Toy" HorizontalAlignment="Left" Height="25" Margin="283,375,0,0" VerticalAlignment="Top" Width="117" Click="Button_Click"/>
     </Grid>
 </Window>

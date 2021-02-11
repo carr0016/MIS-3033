@@ -24,5 +24,23 @@ namespace WPFClasses
         {
             InitializeComponent();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            string manufacturer, name;
+
+            manufacturer = txtMan.Text;
+            name = txtName.Text;
+
+            Toy myToy = new Toy();
+            {
+                myToy.Manufacturer = manufacturer;
+                myToy.Name = name;       
+            }
+
+            lstToys.Items.Add(myToy);
+
+
+        }
     }
 }
