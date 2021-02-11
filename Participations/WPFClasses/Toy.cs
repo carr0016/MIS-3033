@@ -8,19 +8,24 @@ namespace WPFClasses
     {
         public string Manufacturer { get; set; }
         public string Name { get; set; }
-        ///public double Price { get; set; }
+        public double Price { get; set; }
 
-        ///private string Aisle;
+        //private string Aisle;
 
         public Toy()
         {
             Manufacturer = string.Empty;
             Name = string.Empty;
-            ///Price = double.Empty;
 
+            Price = 0;
+            //Aisle = "";
         }
-        ///public string GetAisle()
-
+        
+        //public string GetAisle()
+        //{
+            ///return Manufacturer.First().ToString().ToUpper();
+        //}
+        
         public override string ToString()
         {
             return $"{Manufacturer} - ({Name})";

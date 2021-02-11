@@ -39,6 +39,7 @@ namespace WPFClasses
             }
 
             lstToys.Items.Add(myToy);
+            //Toy selectedToy = (Toy)lstToys.SelectedItem;
 
 
         }
