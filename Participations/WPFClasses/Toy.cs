@@ -25,14 +25,14 @@ namespace WPFClasses
 
             Random rand = new Random();
             int number = rand.Next(1, 25);
-            return "Aisle" + number;
+            return "Aisle " + number;
 
         }
         
 
         public override string ToString()
         {
-            return $"{Manufacturer} - ({Name})";
+            return $"{Manufacturer} - {Name}";
         }
 
 
