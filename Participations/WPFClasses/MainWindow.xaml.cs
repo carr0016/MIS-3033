@@ -45,7 +45,7 @@ namespace WPFClasses
         private void lstToys_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             Toy selectedToy = (Toy)lstToys.SelectedItem;
-            MessageBox.Show(selectedToy.getAisle2());
+            MessageBox.Show(selectedToy.GetAisle());
         }
     }
 }
