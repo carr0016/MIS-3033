@@ -21,4 +21,11 @@
     <Resource Include="rickmortypic.jpg" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Page Update="CharacterInfoWindow.xaml">
+      <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+
 </Project>

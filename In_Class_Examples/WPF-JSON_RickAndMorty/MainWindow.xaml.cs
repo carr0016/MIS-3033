@@ -44,5 +44,12 @@ namespace WPF_JSON_RickAndMorty
                
             }
         }
+
+        private void lstCharacters_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            Character c = (Character)lstCharacters
+            CharacterInfoWindow infoWindow = new CharacterInfoWindow();
+            infoWindow.URL = "";
+        }
     }
 }

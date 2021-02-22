@@ -10,7 +10,7 @@
         <Grid.Background>
             <ImageBrush ImageSource="/rickmortypic.jpg"/>
         </Grid.Background>
-        <ListBox x:Name="lstCharacters" HorizontalAlignment="Left" Height="158" Margin="28,245,0,0" VerticalAlignment="Top" Width="735" SelectionChanged="lstCharacters_SelectionChanged">
+        <ListBox x:Name="lstCharacters" HorizontalAlignment="Left" Height="158" Margin="28,245,0,0" VerticalAlignment="Top" Width="735">
             <ListBox.Background>
                 <ImageBrush/>
             </ListBox.Background>
