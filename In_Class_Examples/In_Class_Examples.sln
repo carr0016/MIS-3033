@@ -5,7 +5,9 @@ VisualStudioVersion = 16.0.30907.101
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WPF-FirstApplication", "WPF-FirstApplication\WPF-FirstApplication.csproj", "{068C02D5-3F62-4BC2-A072-C266128FA013}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPFClassesExample", "WPFClassesExample\WPFClassesExample.csproj", "{486E6A1A-435B-445E-A0C6-CEB9CE1C6E30}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WPFClassesExample", "WPFClassesExample\WPFClassesExample.csproj", "{486E6A1A-435B-445E-A0C6-CEB9CE1C6E30}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPF-JSON_RickAndMorty", "WPF-JSON_RickAndMorty\WPF-JSON_RickAndMorty.csproj", "{A35B5EC0-9CE8-4227-87F6-75D08FA33349}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{486E6A1A-435B-445E-A0C6-CEB9CE1C6E30}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{486E6A1A-435B-445E-A0C6-CEB9CE1C6E30}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{486E6A1A-435B-445E-A0C6-CEB9CE1C6E30}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A35B5EC0-9CE8-4227-87F6-75D08FA33349}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A35B5EC0-9CE8-4227-87F6-75D08FA33349}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A35B5EC0-9CE8-4227-87F6-75D08FA33349}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A35B5EC0-9CE8-4227-87F6-75D08FA33349}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
