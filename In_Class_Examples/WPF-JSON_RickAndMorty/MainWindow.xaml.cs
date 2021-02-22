@@ -1,6 +1,8 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -23,6 +25,24 @@ namespace WPF_JSON_RickAndMorty
         public MainWindow()
         {
             InitializeComponent();
+
+            using (var client = new HttpClient())
+            {
+                ///https://rickandmortyapi.com/api/character
+                ///
+
+                var json = client.GetStringAsync("https://rickandmortyapi.com/api/character").Result;
+
+                //take this string and convert to mortyapi, where nugspot comes in
+
+                RickAndMortyAPI api = JsonConvert.DeserializeObject<RickAndMortyAPI>(json);
+
+                foreach (var character in api.results)
+                {
+                    lstCharacters.Items.Add(character);
+                }
+               
+            }
         }
     }
 }

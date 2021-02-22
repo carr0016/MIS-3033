@@ -7,6 +7,14 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/rickmortypic.jpg"/>
+        </Grid.Background>
+        <ListBox x:Name="lstCharacters" HorizontalAlignment="Left" Height="158" Margin="28,245,0,0" VerticalAlignment="Top" Width="735">
+            <ListBox.Background>
+                <ImageBrush/>
+            </ListBox.Background>
+        </ListBox>
 
     </Grid>
 </Window>

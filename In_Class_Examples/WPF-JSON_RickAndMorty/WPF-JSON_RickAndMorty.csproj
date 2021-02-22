@@ -7,4 +7,18 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="RickandMorty.jpg" />
+    <None Remove="rickmortypic.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="RickandMorty.jpg" />
+    <Resource Include="rickmortypic.jpg" />
+  </ItemGroup>
+
 </Project>
