@@ -1,6 +1,8 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -23,6 +25,16 @@ namespace P_Pokemon
         public MainWindow()
         {
             InitializeComponent();
+
+            string url = "https://pokeapi.co/api/v2/pokemon/?limit=1200";
+            AllPokemonAPI api;
+
+            using (var client = new HttpClient())
+            {
+                string json = client.GetStringAsync(url).Result;
+
+                api = JsonConvert.DeserializeObject<AllPokemonAPI>(json)
+            }
         }
     }
 }
