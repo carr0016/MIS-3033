@@ -33,7 +33,12 @@ namespace P_Pokemon
             {
                 string json = client.GetStringAsync(url).Result;
 
-                api = JsonConvert.DeserializeObject<AllPokemonAPI>(json)
+                api = JsonConvert.DeserializeObject<AllPokemonAPI>(json);
+            }
+           
+            foreach (var result in api.results.OrderBy(x => x.name).ToList())
+            {
+                lstPokemon.Items.Add(result);
             }
         }
     }
