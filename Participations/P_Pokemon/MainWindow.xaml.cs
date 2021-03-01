@@ -41,5 +41,10 @@ namespace P_Pokemon
                 lstPokemon.Items.Add(result);
             }
         }
+
+        private void lstPokemon_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
     }
 }
