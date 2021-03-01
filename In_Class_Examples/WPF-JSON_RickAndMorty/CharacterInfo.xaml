@@ -1,0 +1,12 @@
+﻿<Window x:Class="WPF_JSON_RickAndMorty.CharacterInfo"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF_JSON_RickAndMorty"
+        mc:Ignorable="d"
+        Title="CharacterInfo" Height="450" Width="800">
+    <Grid Background="#FFD85858">
+        <Image x:Name="imgPicture" HorizontalAlignment="Left" Height="174" Margin="46,32,0,0" VerticalAlignment="Top" Width="699" OpacityMask="#FFF9EFEF"/>
+    </Grid>
+</Window>
