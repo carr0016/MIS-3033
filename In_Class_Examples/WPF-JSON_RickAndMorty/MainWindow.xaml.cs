@@ -52,7 +52,7 @@ namespace WPF_JSON_RickAndMorty
             CharacterInfo infoWindow = new CharacterInfo();
             infoWindow.SetImageSource(c);
             infoWindow.ShowDialog();
-            
+
         }
     }
 }

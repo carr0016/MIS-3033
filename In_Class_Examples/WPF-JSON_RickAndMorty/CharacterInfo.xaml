@@ -7,6 +7,6 @@
         mc:Ignorable="d"
         Title="CharacterInfo" Height="450" Width="800">
     <Grid Background="#FFD85858">
-        <Image x:Name="imgPicture" HorizontalAlignment="Left" Height="174" Margin="46,32,0,0" VerticalAlignment="Top" Width="699" OpacityMask="#FFF9EFEF"/>
+        <Image x:Name="imgPicture" HorizontalAlignment="Center" Height="246" VerticalAlignment="Top" Width="324" Margin="0,96,0,0"/>
     </Grid>
 </Window>

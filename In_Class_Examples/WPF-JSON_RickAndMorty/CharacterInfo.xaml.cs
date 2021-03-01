@@ -22,9 +22,9 @@ namespace WPF_JSON_RickAndMorty
         {
             InitializeComponent();
         }
-        private void SetImageSource()
+        public void SetImageSource(Character character)
         {
-            imgPicture.Source = new BitmapImage(new);
+            imgPicture.Source = new BitmapImage(new Uri(character.image));
         }
 
         }
