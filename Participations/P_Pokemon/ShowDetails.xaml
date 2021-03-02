@@ -1,0 +1,14 @@
+﻿<Window x:Class="P_Pokemon.ShowDetails"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:P_Pokemon"
+        mc:Ignorable="d"
+        Title="ShowDetails" Height="450" Width="800">
+    <Grid Background="#FFEC5858">
+        <Image x:Name="imgPoster" HorizontalAlignment="Left" Height="136" Margin="150,38,0,0" VerticalAlignment="Top" Width="507" OpacityMask="Black"/>
+        <Label x:Name="labelPlot" Content="Label" HorizontalAlignment="Left" Height="65" Margin="66,304,0,0" VerticalAlignment="Top" Width="635"/>
+
+    </Grid>
+</Window>

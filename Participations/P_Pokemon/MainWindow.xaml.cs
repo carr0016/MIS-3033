@@ -44,7 +44,11 @@ namespace P_Pokemon
 
         private void lstPokemon_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
+            ResultObject r = (ResultObject)lstPokemon.SelectedItem;
 
+            ShowDetails infoWindow = new ShowDetails();
+            infoWindow.SetImageSource(c);
+            infoWindow.ShowDialog();
         }
     }
 }
