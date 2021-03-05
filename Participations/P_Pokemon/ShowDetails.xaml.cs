@@ -17,6 +17,7 @@ namespace P_Pokemon
     /// </summary>
     public partial class ShowDetails : Window
     {
+        public string URL { get; set; }
         public ShowDetails()
         {
             InitializeComponent();

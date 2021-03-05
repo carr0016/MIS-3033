@@ -13,6 +13,7 @@ namespace P_Pokemon
     {
         public string name { get; set; }
         public string url { get; set; }
+        public string image { get; set; }
 
         public override string ToString()
         {

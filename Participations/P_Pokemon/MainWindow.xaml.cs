@@ -47,7 +47,7 @@ namespace P_Pokemon
             ResultObject r = (ResultObject)lstPokemon.SelectedItem;
 
             ShowDetails infoWindow = new ShowDetails();
-            infoWindow.SetImageSource(c);
+            infoWindow.SetImageSource(r);
             infoWindow.ShowDialog();
         }
     }
