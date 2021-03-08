@@ -1,8 +1,11 @@
 ﻿using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
+using System.Net;
 using System.Net.Http;
+using System.Runtime.Serialization.Json;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -24,20 +27,25 @@ namespace P_ChuckNorrisJokes
     {
         public MainWindow()
         {
-            InitializeComponent();
+            WebClient client = new WebClient();
             string url = "https://api.chucknorris.io/jokes/random";
-            CategoriesAPI api;
+            string json = client.DownloadString(url);
 
-            using (var client = new HttpClient())
+            using (var ms = new MemoryStream(Encoding.Unicode.GetBytes(json)))
             {
-                string json = client.GetStringAsync(url).Result;
+                DataContractJsonSerializer deserializer = new DataContractJsonSerializer(typeof(ResultObject));
+                ResultObject obj = (ResultObject)deserializer.ReadObject(ms);
 
-                api = JsonConvert.DeserializeObject<CategoriesAPI>(json);
+                // Assign data to combo box  
+                foreach (var name in obj.icon_url)
+                {
+
+                    cbo_Categories.Items.Add(name);
+                }
             }
-           
-
 
 
         }
     }
 }
+
