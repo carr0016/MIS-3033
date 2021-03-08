@@ -9,6 +9,7 @@
     <Grid Background="#FFEC5858">
         <Image x:Name="imgPoster" HorizontalAlignment="Left" Height="136" Margin="150,38,0,0" VerticalAlignment="Top" Width="507" OpacityMask="Black" Source="https://pokeapi.co/api/v2/pokemon/pikachu"/>
         <Label x:Name="labelPlot" Content="Label" HorizontalAlignment="Left" Height="65" Margin="66,304,0,0" VerticalAlignment="Top" Width="635"/>
+        <Button x:Name="btnDance" Content="Button" HorizontalAlignment="Left" Height="54" Margin="572,163,0,0" VerticalAlignment="Top" Width="108" Click="btnDance_Click"/>
 
     </Grid>
 </Window>

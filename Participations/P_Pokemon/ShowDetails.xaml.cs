@@ -15,16 +15,23 @@ namespace P_Pokemon
     /// <summary>
     /// Interaction logic for ShowDetails.xaml
     /// </summary>
-    public partial class ShowDetails : Window
+    public partial class ShowDetails : Window //PokemonInfoWindow:Window
     {
-        public string URL { get; set; }
-        public ShowDetails()
+        public ShowDetails() 
         {
             InitializeComponent();
         }
-        public void SetImageSource(ResultObject result)
+        public void PopulateForm(PokemonInfo pokeIno)
         {
-            imgPoster.Source = new BitmapImage(new Uri(result.image));
+            imgPokemon.Source = new BitmapImage(new Uri(PokemonInfoAPI.squigglyWorm.front_default));
+            lblTitle.Content = pokeInfo.name;
+            lblHeight.Content = 
+            lblWeight.Content = $"Weight: {PokemonInfoAPI.weight}";
+        }
+
+        private void btnDance_Click(object sender, RoutedEventArgs e)
+        {
+            imgPokemon.Source = new BitmapImage(new Uri(pokeinfo))
         }
     }
 }

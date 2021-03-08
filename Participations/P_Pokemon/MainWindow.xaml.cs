@@ -33,22 +33,33 @@ namespace P_Pokemon
             {
                 string json = client.GetStringAsync(url).Result;
 
+                var result = client.GetStringAsync(url).Result; 
+
                 api = JsonConvert.DeserializeObject<AllPokemonAPI>(json);
             }
            
-            foreach (var result in api.results.OrderBy(x => x.name).ToList())
+            foreach (ResultObject result in api.results.OrderBy(x => x.name).ToList())
             {
                 lstPokemon.Items.Add(result);
             }
         }
 
-        private void lstPokemon_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        private void lstPokemon_MouseDoubleClick(object sender, MouseButtonEventArgs e)
         {
-            ResultObject r = (ResultObject)lstPokemon.SelectedItem;
+            ResultObject selectedPokemon = (ResultObject)lstPokemon.SelectedItem;
 
-            ShowDetails infoWindow = new ShowDetails();
-            infoWindow.SetImageSource(r);
-            infoWindow.ShowDialog();
+            //call it and get data
+            PokemonInfoAPI pokeInfo;
+
+            using (var client = new HttpClient())
+            {
+                string json = client.GetStringAsync(selectedPokemon.url).Result;
+                pokeInfo = JsonConvert.DeserializeObject<PokemonInfoAPI>(json);
+            }
+
+            PokemonInfoWindow wnd = new PokemonInfoWindow();
+            wnd.PopulateForm(pokeInfo);
+            wnd.ShowDialog();
         }
     }
 }
