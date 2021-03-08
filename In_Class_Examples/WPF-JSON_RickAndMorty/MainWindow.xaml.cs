@@ -28,20 +28,24 @@ namespace WPF_JSON_RickAndMorty
 
             using (var client = new HttpClient())
             {
-                ///https://rickandmortyapi.com/api/character
-                ///
-
-                var json = client.GetStringAsync("https://rickandmortyapi.com/api/character").Result;
-
-                //take this string and convert to mortyapi, where nugspot comes in
-
-                RickAndMortyAPI api = JsonConvert.DeserializeObject<RickAndMortyAPI>(json);
-
-                foreach (var character in api.results)
+                string url = "https://rickandmortyapi.com/api/character";
+                
+               while (string.IsNullOrWhiteSpace(url) == false)
                 {
-                    lstCharacters.Items.Add(character);
-                }
-               
+                    var result = client.GetAsync(url).Result;
+
+                    if (result.IsSuccessStatusCode)
+                    {
+
+                        string json = "";
+                        RickAndMortyAPI api = JsonConvert.DeserializeObject<RickAndMortyAPI>(json);
+
+                        foreach (var character in api.results)
+                        {
+                            lstCharacters.Items.Add(character);
+                        }
+                        url = api.info.next;
+                    }
             }
         }
 
