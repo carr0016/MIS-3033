@@ -6,6 +6,10 @@ namespace P_ChuckNorrisJokes
 {
     public class CategoriesAPI
     {
+        public List<ResultObject> results { get; set; }
+    }
+    public class ResultObject
+    {
         public int created_at { get; set; }
         public string icon_url { get; set; }
         public int id { get; set; }

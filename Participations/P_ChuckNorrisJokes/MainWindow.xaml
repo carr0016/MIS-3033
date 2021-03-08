@@ -7,8 +7,9 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <ComboBox HorizontalAlignment="Left" Height="111" Margin="31,76,0,0" VerticalAlignment="Top" Width="258"/>
-        <Button Content="Button" HorizontalAlignment="Left" Height="117" Margin="512,100,0,0" VerticalAlignment="Top" Width="238"/>
+        <ComboBox x:Name="cbo_Categories" HorizontalAlignment="Left" Height="111" Margin="31,76,0,0" VerticalAlignment="Top" Width="258"/>
+        <Button x:Name="btnQuote" Content="Get Quote" HorizontalAlignment="Left" Height="117" Margin="512,100,0,0" VerticalAlignment="Top" Width="238"/>
+        <Label Content="Categories:" HorizontalAlignment="Left" Height="42" Margin="31,10,0,0" VerticalAlignment="Top" Width="150" FontSize="20"/>
 
     </Grid>
 </Window>
