@@ -46,6 +46,11 @@ namespace P_ChuckNorrisJokes
 
 
         }
+
+        private void btnQuote_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
 
