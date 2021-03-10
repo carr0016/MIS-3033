@@ -27,30 +27,33 @@ namespace P_ChuckNorrisJokes
     {
         public MainWindow()
         {
-            WebClient client = new WebClient();
             string url = "https://api.chucknorris.io/jokes/random";
-            string json = client.DownloadString(url);
+            CategoriesAPI api;
 
-            using (var ms = new MemoryStream(Encoding.Unicode.GetBytes(json)))
+            using (var client = new HttpClient())
             {
-                DataContractJsonSerializer deserializer = new DataContractJsonSerializer(typeof(ResultObject));
-                ResultObject obj = (ResultObject)deserializer.ReadObject(ms);
+                string json = client.GetStringAsync(url).Result;
 
-                // Assign data to combo box  
-                foreach (var name in obj.icon_url)
-                {
+                // Use if you need to validate that it was successful
 
-                    cbo_Categories.Items.Add(name);
-                }
+                var result = client.GetStringAsync(url).Result;
+
+                api = JsonConvert.DeserializeObject<CategoriesAPI>(result);
+
             }
 
 
+            foreach (ResultObject result in api.results.OrderBy(x => x.value).ToList())
+            {
+                cbo_Categories.Items.Add(result);
+            }
+
         }
 
-        private void btnQuote_Click(object sender, RoutedEventArgs e)
-        {
 
-        }
     }
-}
+
+        
+    }
+
 
