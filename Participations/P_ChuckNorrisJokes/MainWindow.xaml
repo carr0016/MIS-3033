@@ -7,9 +7,12 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <ComboBox x:Name="cbo_Categories" HorizontalAlignment="Left" Height="97" Margin="31,76,0,0" VerticalAlignment="Top" Width="252"/>
+        <Grid.Background>
+            <ImageBrush ImageSource="/chuck norris.jpg"/>
+        </Grid.Background>
+        <ComboBox x:Name="cbo_Categories" HorizontalAlignment="Left" Height="97" Margin="31,76,0,0" VerticalAlignment="Top" Width="252" SelectionChanged="cbo_Categories_SelectionChanged"/>
         <Button x:Name="btnQuote" Content="Get Quote" HorizontalAlignment="Left" Height="117" Margin="512,100,0,0" VerticalAlignment="Top" Width="238"/>
-        <Label Content="Categories:" HorizontalAlignment="Left" Height="42" Margin="31,10,0,0" VerticalAlignment="Top" Width="150" FontSize="20"/>
+        <Label Content="Categories:" HorizontalAlignment="Left" Height="66" Margin="31,10,0,0" VerticalAlignment="Top" Width="442" FontSize="36"/>
 
     </Grid>
 </Window>

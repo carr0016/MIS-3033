@@ -42,15 +42,13 @@ namespace P_ChuckNorrisJokes
 
             }
 
-
-            foreach (ResultObject result in api.results.OrderBy(x => x.value).ToList())
-            {
-                cbo_Categories.Items.Add(result);
-            }
-
         }
 
-
+        private void cbo_Categories_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            cbo_Categories.Items.Add("All");
+            cbo_Categories.SelectedIndex = 0;
+        }
     }
 
         
