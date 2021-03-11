@@ -1,6 +1,8 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -23,6 +25,22 @@ namespace GOT_Quote
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void btnGetQuote_Click(object sender, RoutedEventArgs e)
+        {
+            QuoteInfo quote;
+            using (var client = new HttpClient())
+            {
+                string url = "https://got-quotes.herokuapp.com/quotes";
+                GOTAPI api;
+                
+                string json = client.GetStringAsync(url).Result;
+                api = JsonConvert.DeserializeObject<GOTAPI>(json);
+
+                txtQuote.Text = $"{quote} {character}";
+
+            }
         }
     }
 }
