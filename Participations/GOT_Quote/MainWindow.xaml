@@ -11,7 +11,7 @@
             <ImageBrush ImageSource="/got.jpg"/>
         </Grid.Background>
         <Button x:Name="btnGetQuote" Content="Get Quote" HorizontalAlignment="Left" Height="109" Margin="25,27,0,0" VerticalAlignment="Top" Width="221" Click="btnGetQuote_Click"/>
-        <TextBox x:Name="txtQuote" HorizontalAlignment="Left" Height="112" Margin="97,259,0,0" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Top" Width="587"/>
+        <TextBox x:Name="txtQuote" HorizontalAlignment="Left" Height="112" Margin="97,259,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="587"/>
 
     </Grid>
 </Window>

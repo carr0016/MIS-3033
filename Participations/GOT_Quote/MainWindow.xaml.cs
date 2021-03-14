@@ -25,11 +25,12 @@ namespace GOT_Quote
         public MainWindow()
         {
             InitializeComponent();
+
         }
 
         private void btnGetQuote_Click(object sender, RoutedEventArgs e)
         {
-            QuoteInfo quote;
+            
             using (var client = new HttpClient())
             {
                 string url = "https://got-quotes.herokuapp.com/quotes";
@@ -39,8 +40,12 @@ namespace GOT_Quote
                 api = JsonConvert.DeserializeObject<GOTAPI>(json);
 
                 txtQuote.Text = $"{quote} {character}";
+               
+
 
             }
         }
+
+      
     }
 }

@@ -7,16 +7,17 @@ namespace GOT_Quote
     public class GOTAPI
     {
         public QuoteInfo quoteInfo { get; set; }
-    }
-    public class QuoteInfo
-    {
-        public string quote { get; set; }
-        public string character { get; set; }
 
-        public override string ToString()
+        public class QuoteInfo
         {
-            
-            return $"{quote} {character}";
+            public string quote { get; set; }
+            public string character { get; set; }
+
+            public override string ToString()
+            {
+                return $"{quote} {character}";
+            }
         }
+
     }
 }
