@@ -1,0 +1,27 @@
+﻿<Window x:Class="Practice_HW2FulFillData.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Practice_HW2FulFillData"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="171*"/>
+            <RowDefinition Height="263*"/>
+        </Grid.RowDefinitions>
+        <Label Content="Select the button below to open a data set" HorizontalAlignment="Left" Height="61" Margin="23,10,0,0" VerticalAlignment="Top" Width="320" FontSize="16"/>
+        <Button x:Name="btnOpenFile" Content="Open" HorizontalAlignment="Left" Height="45" Margin="400,26,0,0" VerticalAlignment="Top" Width="299" Click="btnOpenFile_Click"/>
+        <Label Content="State most fulfilled for Males and &#xD;&#xA;Females" HorizontalAlignment="Left" Height="132" Margin="8,124,0,0" VerticalAlignment="Top" Width="256" Grid.RowSpan="2" FontSize="14"/>
+        <Label Content="States most fulfilled &#xD;&#xA;for Males" HorizontalAlignment="Left" Height="59" Margin="235,124,0,0" VerticalAlignment="Top" Width="160" Grid.RowSpan="2" FontSize="14"/>
+        <Label Content="States most fulfilled &#xD;&#xA;for Females" HorizontalAlignment="Left" Height="59" Margin="400,125,0,0" VerticalAlignment="Top" Width="160" Grid.RowSpan="2" FontSize="14"/>
+        <Label Content="All states that have a mean&#xD;&#xA; higher than or equal to 8" HorizontalAlignment="Left" Height="122" Margin="587,124,0,0" VerticalAlignment="Top" Width="186" Grid.RowSpan="2" FontSize="14"/>
+        <ListBox x:Name="lstBoth" HorizontalAlignment="Left" Height="205" Margin="23,19,0,0" Grid.Row="1" VerticalAlignment="Top" Width="160"/>
+        <ListBox x:Name="lstMale" HorizontalAlignment="Left" Height="205" Margin="216,17,0,0" Grid.Row="1" VerticalAlignment="Top" Width="160"/>
+        <ListBox x:Name="lstFemale" HorizontalAlignment="Left" Height="205" Margin="400,19,0,0" Grid.Row="1" VerticalAlignment="Top" Width="160"/>
+        <ListBox x:Name="lstMean" HorizontalAlignment="Left" Height="205" Margin="600,19,0,0" Grid.Row="1" VerticalAlignment="Top" Width="160"/>
+
+
+    </Grid>
+</Window>
