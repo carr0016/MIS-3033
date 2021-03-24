@@ -1,0 +1,19 @@
+﻿<Window x:Class="Practice_HW3.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Practice_HW3"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <ComboBox x:Name="cboRating" HorizontalAlignment="Left" Height="63" Margin="59,45,0,0" VerticalAlignment="Top" Width="138" SelectionChanged="cboRating_SelectionChanged"/>
+        <ComboBox x:Name="cboCountry" HorizontalAlignment="Left" Height="63" Margin="319,45,0,0" VerticalAlignment="Top" Width="138" SelectionChanged="cboCountry_SelectionChanged"/>
+        <ComboBox x:Name="cboLanguage" HorizontalAlignment="Left" Height="63" Margin="622,45,0,0" VerticalAlignment="Top" Width="138" SelectionChanged="cboLanguage_SelectionChanged"/>
+        <Label Content="Rated" HorizontalAlignment="Left" Height="63" Margin="59,138,0,0" VerticalAlignment="Top" Width="147"/>
+        <Label Content="Country" HorizontalAlignment="Left" Height="63" Margin="319,120,0,0" VerticalAlignment="Top" Width="147"/>
+        <Label Content="Language" HorizontalAlignment="Left" Height="63" Margin="622,120,0,0" VerticalAlignment="Top" Width="147"/>
+        <ListBox HorizontalAlignment="Left" Height="115" Margin="145,248,0,0" VerticalAlignment="Top" Width="543"/>
+
+    </Grid>
+</Window>

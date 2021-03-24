@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PracticeHW_GraduationHandou
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Practice_HW2FulFillData", "Practice_HW2FulFillData\Practice_HW2FulFillData.csproj", "{53021FDF-A684-4C55-8766-946024DDE425}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Practice_HW3", "Practice_HW3\Practice_HW3.csproj", "{E50FA2A6-8204-4B6A-B261-DD01BBBC4A25}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{53021FDF-A684-4C55-8766-946024DDE425}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{53021FDF-A684-4C55-8766-946024DDE425}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{53021FDF-A684-4C55-8766-946024DDE425}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E50FA2A6-8204-4B6A-B261-DD01BBBC4A25}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E50FA2A6-8204-4B6A-B261-DD01BBBC4A25}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E50FA2A6-8204-4B6A-B261-DD01BBBC4A25}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E50FA2A6-8204-4B6A-B261-DD01BBBC4A25}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
