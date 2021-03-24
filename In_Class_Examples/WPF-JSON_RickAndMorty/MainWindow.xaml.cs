@@ -60,3 +60,6 @@ namespace WPF_JSON_RickAndMorty
         }
     }
 }
+   
+
+
