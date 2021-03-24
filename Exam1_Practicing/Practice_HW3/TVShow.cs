@@ -28,7 +28,7 @@ namespace Practice_HW3
         public string ImdbVotes { get; set; }
         public string TotalSeasons { get; set; }
 
-        public TVShow ()
+        public TVShow () //create an empty constructor
         {
             Actors = String.Empty;
             Awards = String.Empty;
@@ -50,6 +50,29 @@ namespace Practice_HW3
             ImdbVotes = String.Empty;
             TotalSeasons = String.Empty;
         }
+        public TVShow(string line)
+        {
+            var pieces = line.Split('\t'); //parse it into pieces
 
+            Actors = pieces[1];
+            Awards = pieces[2];
+            Country = pieces[3];
+            Director = pieces[4];
+            Genre = pieces[5];
+            Language = pieces[6];
+            Plot = pieces[7];
+            Poster = pieces[8];
+            Rated = pieces[9];
+            Released = pieces[10];
+            RuntimeInMinutes = pieces[11];
+            Title = pieces[12];
+            Type = pieces[13];
+            Writer = pieces[14];
+            Year = pieces[15];
+            ImdbID = pieces[16];
+            ImdbRating = pieces[17];
+            ImdbVotes = pieces[18];
+            TotalSeasons = pieces[19];
+        }
     }
 }
