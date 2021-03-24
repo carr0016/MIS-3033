@@ -63,26 +63,97 @@ namespace Practice_HW3
             }
         }
 
-        private void PopulateCountryFilter() 
+        private void PopulateCountryFilter()
         {
             cboCountry.Items.Add("All");
             cboCountry.SelectedIndex = 0;
+
+            foreach (var show in TVShows)
+            {
+                var values = show.Country.Split(',');
+                foreach (var val in values)
+                {
+                    if (string.IsNullOrWhiteSpace(val))
+                    {
+                        continue;
+                    }
+                    string cleanedValue = val.Trim(CharactersToTrim);
+                    if (!cboCountry.Items.Contains(cleanedValue))
+                    {
+                        cboCountry.Items.Add(cleanedValue);
+                    }
+                }
+            }
         }
 
         private void PopulateRatingFilter()
         {
             cboRating.Items.Add("All");
             cboRating.SelectedIndex = 0;
+
+            foreach (var show in TVShows)
+            {
+                if (string.IsNullOrWhiteSpace(show.Rated))
+                {
+                    continue;
+                }
+                string cleanedValue = show.Rated.Trim();
+                if (!cboRating.Items.Contains(cleanedValue))
+                {
+                    cboRating.Items.Add(cleanedValue);
+                }
+            }
         }
 
-        private void PopulateListBox(List<TVShow> tVShows)
+        private void PopulateListBox(List<TVShow> tvShows)
         {
-            
+            lstShows.Items.Clear();
+            foreach (var show in tvShows)
+            {
+                lstShows.Items.Add(show);
+            }
         }
 
         private void cboRating_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
+            if (cboRating.SelectedValue !=null)
+            {
+                UpdateDateForFilters(); //generate method
+            }
+        }
 
+        private void UpdateDateForFilters()
+        {
+            if (cboCountry.SelectedValue is null
+                || cboLanguage.SelectedValue is null
+                || cboRating.SelectedValue is null)
+            {
+                return;
+            }
+            List<TVShow> filteredShows;
+            filteredShows = FilterRating(TVShows); //generate method
+            filteredShows = FilterCountry(filteredShows);
+            filteredShows = FilterLanguage(filteredShows);
+
+            PopulateListBox(filteredShows);
+
+        }
+
+        private List<TVShow> FilterLanguage(List<TVShow> shows)
+        {
+            string language = cboLanguage.SelectedValue.ToString();
+            List<TVShow> filteredShows = new List<TVShow>();
+
+        }
+
+        private List<TVShow> FilterCountry(List<TVShow> shows)
+        {
+            throw new NotImplementedException();
+        }
+
+        private List<TVShow> FilterRating(List<TVShow> shows)
+        {
+            throw new NotImplementedException();
         }
 
         private void cboCountry_SelectionChanged(object sender, SelectionChangedEventArgs e)

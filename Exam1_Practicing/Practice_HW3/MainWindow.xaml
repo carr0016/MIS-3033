@@ -13,7 +13,7 @@
         <Label Content="Rated" HorizontalAlignment="Left" Height="63" Margin="59,138,0,0" VerticalAlignment="Top" Width="147"/>
         <Label Content="Country" HorizontalAlignment="Left" Height="63" Margin="319,120,0,0" VerticalAlignment="Top" Width="147"/>
         <Label Content="Language" HorizontalAlignment="Left" Height="63" Margin="622,120,0,0" VerticalAlignment="Top" Width="147"/>
-        <ListBox HorizontalAlignment="Left" Height="115" Margin="145,248,0,0" VerticalAlignment="Top" Width="543"/>
+        <ListBox x:Name="lstShows" HorizontalAlignment="Left" Height="115" Margin="145,248,0,0" VerticalAlignment="Top" Width="543"/>
 
     </Grid>
 </Window>
