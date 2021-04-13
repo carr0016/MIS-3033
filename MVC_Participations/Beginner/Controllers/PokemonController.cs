@@ -1,17 +1,14 @@
-﻿using Beginner.Models;
-using Newtonsoft.Json;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Net.Http;
 using System.Web;
 using System.Web.Mvc;
 
 namespace Beginner.Controllers
 {
-    public class ChuckController : Controller
+    public class PokemonController : Controller
     {
-        // GET: Chuck
+        // GET: Pokemon
         public ActionResult Index()
         {
             RandomChuckJokeAPI joke;
@@ -22,8 +19,7 @@ namespace Beginner.Controllers
 
                 joke = JsonConvert.DeserializeObject<RandomChuckJokeAPI>(json);
             }
-
-            return View(joke);
+            return View();
         }
     }
 }
