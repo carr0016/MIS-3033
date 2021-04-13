@@ -46,5 +46,34 @@ namespace Beginner.Models
         public string url { get; set; }
     }
 
-    //13:18
+    public class Version
+    {
+        public string name { get; set; }
+        public string url { get; set; }
+    }
+
+    public class GameIndice
+    {
+        public int game_index { get; set; }
+        public Version version { get; set; }
+    }
+    public class Item
+    {
+        public string name { get; set; }
+        public string url { get; set; }
+    }
+    public class Version2
+    {
+        public string name { get; set; }
+        public string url { get; set; }
+    }
+    public class VersionDetail
+    {
+        public int rarity { get; set; }
+        public Version2 version { get; set; }
+    }
+    public class HeldItem
+    {
+
+    }
 }
