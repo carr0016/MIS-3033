@@ -1,8 +1,11 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Http;
 using System.Web;
 using System.Web.Mvc;
+using static Beginner.Models.Result;
 
 namespace Beginner.Controllers
 {
@@ -11,15 +14,15 @@ namespace Beginner.Controllers
         // GET: Pokemon
         public ActionResult Index()
         {
-            RandomChuckJokeAPI joke;
+            PokemonApi allpokemon;
 
             using (var client = new HttpClient())
             {
                 var json = client.GetStringAsync("https://api.chucknorris.io/jokes/random").Result;
 
-                joke = JsonConvert.DeserializeObject<RandomChuckJokeAPI>(json);
+                allpokemon = JsonConvert.DeserializeObject<PokemonApi>(json);
             }
-            return View();
+            return View(allpokemon.results);
         }
     }
 }

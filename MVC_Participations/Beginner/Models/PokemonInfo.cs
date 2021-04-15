@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -75,5 +76,64 @@ namespace Beginner.Models
     public class HeldItem
     {
 
+    }
+    public class Move2
+    {
+        public string name { get; set; }
+        public string url { get; set; }
+    }
+    public class MoveLearnMethod
+    {
+        public string name { get; set; }
+        public string url { get; set; }
+    }
+    public class VersionGroup
+    {
+        public string name { get; set; }
+        public string url { get; set; }
+    }
+    public class VersionGroupDetail
+    {
+        public int level_learned_at { get; set; }
+        public MoveLearnMethod move_learn_method { get; set; }
+        public VersionGroup version_group { get; set; }
+    }
+    public class Move
+    {
+        public Move2 move { get; set; }
+        public List<VersionGroupDetail> version_group_details { get; set; }
+    }
+    public class Species
+    {
+        public string name { get; set; }
+        public string url { get; set; }
+    }
+    public class DreamWorld
+    {
+        public string front_default { get; set; }
+        public object front_female { get; set; }
+    }
+    public class OfficialArtwork
+    {
+        public string front_default { get; set; }
+    }
+    public class Other
+    {
+        public DreamWorld dream_world { get; set; }
+        [JsonProperty("official-artwork")]
+        public OfficialArtwork OfficialArtwork { get; set; }
+    }
+    public class RedBlue
+    {
+        public string back_default { get; set; }
+        public object back_gray { get; set; }
+        public string front_default { get; set; }
+        public object front_gray { get; set; }
+    }
+    public class Generation1
+    {
+        [JsonProperty("red-blue")]
+        public RedBlue RedBlue { get; set; }
+        public Yellow yellow { get; set; }
     }
 }
