@@ -7,11 +7,18 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <Button Content="Criminal Minds" HorizontalAlignment="Left" Height="103" Margin="10,290,0,0" VerticalAlignment="Top" Width="180" Click="Button_Click"/>
-        <Label Content="CBS&#xD;&#xA;Crime&#xD;&#xA;" HorizontalAlignment="Left" Height="77" Margin="293,125,0,0" VerticalAlignment="Top" Width="272"/>
-        <Button x:Name="btn2" Content="NCIS" HorizontalAlignment="Left" Height="103" Margin="208,290,0,0" VerticalAlignment="Top" Width="180" Click="btn2_Click"/>
-        <Button x:Name="btn3" Content="Queen of the South" HorizontalAlignment="Left" Height="103" Margin="415,290,0,0" VerticalAlignment="Top" Width="176" Click="Button_Click_1"/>
-        <Button x:Name="btn4" Content="All American" HorizontalAlignment="Left" Height="103" Margin="621,290,0,0" VerticalAlignment="Top" Width="146" Click="btn4_Click"/>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="Black" Offset="0"/>
+                <GradientStop Color="#FFC95858" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Button Content="Criminal Minds" HorizontalAlignment="Left" Height="103" Margin="10,290,0,0" VerticalAlignment="Top" Width="180" Click="Button_Click" FontSize="20"/>
+        <Label Content="CBS&#xA;Crime&#xD;&#xA;B.A.U.&#xD;&#xA;Analyze Serial Killers and Crimes&#xD;&#xA;&#xD;&#xA;&#xA;" HorizontalAlignment="Left" Height="170" Margin="206,102,0,0" VerticalAlignment="Top" Width="422" FontSize="22" Background="#FF953131"/>
+        <Button x:Name="btn2" Content="NCIS" HorizontalAlignment="Left" Height="103" Margin="208,290,0,0" VerticalAlignment="Top" Width="180" Click="btn2_Click" FontSize="20"/>
+        <Button x:Name="btn3" Content="Queen of the South" HorizontalAlignment="Left" Height="103" Margin="415,290,0,0" VerticalAlignment="Top" Width="182" Click="Button_Click_1" FontSize="20"/>
+        <Button x:Name="btn4" Content="All American" HorizontalAlignment="Left" Height="103" Margin="621,290,0,0" VerticalAlignment="Top" Width="146" Click="btn4_Click" FontSize="20"/>
+        <Label Content="Guess the TV Show" HorizontalAlignment="Left" Height="87" Margin="177,10,0,0" VerticalAlignment="Top" Width="451" FontSize="48" Background="White"/>
 
 
     </Grid>
