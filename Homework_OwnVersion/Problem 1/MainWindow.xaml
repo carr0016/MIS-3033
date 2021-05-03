@@ -13,12 +13,12 @@
                 <GradientStop Color="#FFC95858" Offset="1"/>
             </LinearGradientBrush>
         </Grid.Background>
-        <Button Content="Criminal Minds" HorizontalAlignment="Left" Height="103" Margin="10,290,0,0" VerticalAlignment="Top" Width="180" Click="Button_Click" FontSize="20"/>
-        <Label Content="CBS&#xA;Crime&#xD;&#xA;B.A.U.&#xD;&#xA;Analyze Serial Killers and Crimes&#xD;&#xA;&#xD;&#xA;&#xA;" HorizontalAlignment="Left" Height="170" Margin="206,102,0,0" VerticalAlignment="Top" Width="422" FontSize="22" Background="#FF953131"/>
-        <Button x:Name="btn2" Content="NCIS" HorizontalAlignment="Left" Height="103" Margin="208,290,0,0" VerticalAlignment="Top" Width="180" Click="btn2_Click" FontSize="20"/>
-        <Button x:Name="btn3" Content="Queen of the South" HorizontalAlignment="Left" Height="103" Margin="415,290,0,0" VerticalAlignment="Top" Width="182" Click="Button_Click_1" FontSize="20"/>
-        <Button x:Name="btn4" Content="All American" HorizontalAlignment="Left" Height="103" Margin="621,290,0,0" VerticalAlignment="Top" Width="146" Click="btn4_Click" FontSize="20"/>
-        <Label Content="Guess the TV Show" HorizontalAlignment="Left" Height="87" Margin="177,10,0,0" VerticalAlignment="Top" Width="451" FontSize="48" Background="White"/>
+        <Button Content="Criminal Minds" HorizontalAlignment="Left" Height="103" Margin="10,290,0,0" VerticalAlignment="Top" Width="180" Click="Button_Click" FontSize="20" Background="White" FontFamily="MV Boli"/>
+        <Label Content="&#x9;&#x9;&#x9;1. CBS&#xA;&#x9;&#x9;&#x9;2. Crime&#xD;&#xA;&#x9;&#x9;&#x9;3. B.A.U.&#xD;&#xA;&#x9;&#x9;&#x9;4. Analyze Serial Killers and Crimes&#xD;&#xA;&#xD;&#xA;&#xA;" HorizontalAlignment="Left" Height="139" Margin="0,97,0,0" VerticalAlignment="Top" Width="792" FontSize="22" Background="#FF953131" FontWeight="Bold"/>
+        <Button x:Name="btn2" Content="NCIS" HorizontalAlignment="Left" Height="103" Margin="195,290,0,0" VerticalAlignment="Top" Width="180" Click="btn2_Click" FontSize="20" Background="White" FontFamily="MV Boli"/>
+        <Button x:Name="btn3" Content="Queen of the South" HorizontalAlignment="Left" Height="103" Margin="380,290,0,0" VerticalAlignment="Top" Width="201" Click="Button_Click_1" FontSize="20" Background="White" FontFamily="MV Boli"/>
+        <Button x:Name="btn4" Content="All American" HorizontalAlignment="Left" Height="103" Margin="586,290,0,0" VerticalAlignment="Top" Width="183" Click="btn4_Click" FontSize="20" Background="White" FontFamily="MV Boli"/>
+        <Label Content="&#x9;Guess the TV Show" HorizontalAlignment="Left" Height="97" VerticalAlignment="Top" Width="792" FontSize="48" Background="White" FontFamily="MV Boli"/>
 
 
     </Grid>
